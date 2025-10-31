@@ -50,25 +50,6 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-### 📱 Device Management APIs
-
-#### 1. Add Devices
-**Endpoint:** `POST /devices/add`
-
-**Description:** Add new devices to the system
-
-**Request:**
-```bash
-curl -X POST "http://localhost:8081/devices/add?user=john_doe" \
-  -H "Content-Type: application/json" \
-  -d '[
-    {"id": "device1", "name": "Temperature Sensor", "enabled": false},
-    {"id": "device2", "name": "Pressure Monitor", "enabled": false}
-  ]'
-```
-
-## 🧪 Testing"Added devices: [device1, device2] | Current usage=0"
-
 Run unit tests:
 ```bash
 mvn test
